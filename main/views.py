@@ -6,4 +6,5 @@ from .models import *
 def index(request):
     section=Section.objects.all()
     achievements=Achievement.objects.all()
-    return render(request,'index.html',{'achievements':achievements,'section':section})
+    videos=Video.objects.all()
+    return render(request,'index.html',{'achievements':achievements,'section':section,'videos':videos})
