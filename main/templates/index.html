@@ -113,11 +113,11 @@ more than 133 plus females worldwide.</p>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
      {% for video in videos %}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
+            <div class="">
                 {% if video.youtubelink %}
                 <iframe width="1800" height="1800" src="https://www.youtube.com/embed/{{ video.youtubelink }}" title="{{ video.name }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid"></iframe>
                 {% else %}
-                <iframe width="1800" height="1800" src="{{ video.file.url }}" title="{{ video.name }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid"></iframe>
+                <iframe width="1800" height="1800" src="{{ video.file.url }}" title="{{ video.name }}" frameborder="0" allow="accelerometer;muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid"></iframe>
                 {% endif %}
             </div>
           </div>
