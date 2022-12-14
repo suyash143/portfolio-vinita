@@ -11,7 +11,7 @@ class Achievement(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     section=models.ForeignKey(Section,blank=True,on_delete=models.SET_NULL,null=True)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images')
     date = models.DateField()
 
     def __str__(self):
@@ -31,7 +31,7 @@ class Achievement(models.Model):
 class Video(models.Model):
     name=models.CharField(max_length=200,null=True,blank=True)
     youtubelink=models.CharField(max_length=1000,null=True,blank=True)
-    file=models.FileField(upload_to='video/',null=True,blank=True)
+    file=models.FileField(upload_to='video',null=True,blank=True)
 
     def __str__(self):
         return self.name
