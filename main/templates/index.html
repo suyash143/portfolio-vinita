@@ -6,7 +6,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Vinita Raj</h1>
-      <p>I'm <span class="typed" data-typed-items="Entrepreneur, Orator, ChangeMaker"></span></p>
+      <p>I'm <span class="typed" data-typed-items="an Entrepreneur, a Orator, a ChangeMaker"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -90,8 +90,8 @@ more than 133 plus females worldwide.</p>
             <div class="portfolio-wrap">
               <img src="static{{ achievement.image.url }}" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="static{{ achievement.image_url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="static{{ achievement.image_url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ achievement.description }}"><i class="bx bx-plus"></i></a>
+{#                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>#}
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ more than 133 plus females worldwide.</p>
                 <iframe width="1800" height="1800" src="https://www.youtube.com/embed/{{ video.youtubelink }}" title="{{ video.name }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid"></iframe>
                 {% else %}
 
-                <iframe width="1800" height="1800" src="static{{ video.file.url }}" title="{{ video.name }}" frameborder="0" allow="accelerometer;muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen class="img-fluid"></iframe>
+                <iframe width="1800" height="1800" src="static{{ video.file.url }}" title="{{ video.name }}"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen class="img-fluid"></iframe>
                 {% endif %}
             </div>
           </div>
